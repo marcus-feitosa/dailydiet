@@ -3,7 +3,9 @@ import { useFonts, NunitoSans_400Regular, NunitoSans_700Bold } from '@expo-googl
 
 import { Home } from './src/screens/Home';
 
-import { ActivityIndicator } from 'react-native';
+
+import { Loading } from './src/comṕonents/Loading';
+
 import theme from './src/theme';
 
 export default function App() {
@@ -13,7 +15,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-       {fontsLoaded ? <Home /> : <ActivityIndicator />}
+       {!fontsLoaded ? <Home /> : <Loading />}
     </ThemeProvider>
   );
 }
