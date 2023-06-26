@@ -1,9 +1,10 @@
-import { View,Text } from "react-native";
+import { Header } from "../../comṕonents/Header";
+
 
 export function Home(){
     return(
-        <View>
-            <Text>OLAAAAA</Text>
-        </View>
+     
+             <Header />
+      
     )
 }
