@@ -7,6 +7,7 @@ import { Home } from './src/screens/Home';
 import { Loading } from './src/comṕonents/Loading';
 
 import theme from './src/theme';
+import { StatusBar } from 'react-native';
 
 export default function App() {
 
@@ -15,7 +16,8 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-       {!fontsLoaded ? <Home /> : <Loading />}
+        <StatusBar barStyle="dark-content" backgroundColor="transparent" translucent/>
+       {fontsLoaded ? <Home /> : <Loading />}
     </ThemeProvider>
   );
 }
