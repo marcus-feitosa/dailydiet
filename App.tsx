@@ -4,7 +4,7 @@ import { useFonts, NunitoSans_400Regular, NunitoSans_700Bold } from '@expo-googl
 import { Home } from './src/screens/Home';
 
 
-import { Loading } from './src/comṕonents/Loading';
+import { Loading } from './src/components/Loading';
 
 import theme from './src/theme';
 import { StatusBar } from 'react-native';
